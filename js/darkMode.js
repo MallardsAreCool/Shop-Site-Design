@@ -1,6 +1,7 @@
 var darkMode = localStorage.getItem('darkMode');
 var lightSwitch = document.querySelector('.nav_bar__toggle_colour img');
 var mainLogo = document.querySelector('header>.logo img');
+var smallLogo = document.querySelector('.nav_bar__logo img');
 
 if (darkMode == 'true') turnOffLights();
 
@@ -10,6 +11,7 @@ function turnOffLights() {
 
 	document.querySelector('body').classList.add('dark');
 	lightSwitch.src = 'images/design/MOON.svg';
+	smallLogo.src = 'images/design/dark_logo.png';
 	mainLogo.src = 'images/design/dark_logo.png';
 }
 
@@ -19,5 +21,6 @@ function turnOnLights() {
 
 	lightSwitch.src = 'images/design/SUN.svg';
 	mainLogo.src = 'images/design/light_logo.png';
+	smallLogo.src = 'images/design/light_logo.png';
 	document.querySelector('body').classList.remove('dark');
 }

@@ -15,14 +15,16 @@
 :root {
   --background-colour: #fbbfec;
   --text-hover: #8ad3ff;
+  --main-text-colour: #fbbfec;
 }
 
 .dark {
   --background-colour: #383838 !important;
+  --main-text-colour: #383838 !important;
 }
 
 body {
-  color: white;
+  color: #fff;
   font-family: "din-condensed-bold";
 }
 
@@ -51,8 +53,8 @@ header .logo img {
   width: 100%;
   height: 50px;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  grid-template-columns: 1fr auto 1fr;
   padding: 0.1em 1.9em !important;
 }
 .nav_bar__logo a {
@@ -147,14 +149,9 @@ header .logo img {
 
 .shop_layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media only screen and (max-device-width: 1920px) {
-  .shop_layout {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 .product_card {
   text-decoration: none;
   position: relative;
@@ -173,8 +170,8 @@ header .logo img {
   transition: transform 600ms cubic-bezier(0.57, 0.06, 0.05, 0.95);
 }
 .product_card__tag {
+  color: var(--main-text-colour);
   background: white;
-  color: #fbbfec !important;
   position: absolute;
   bottom: 50px;
   left: 0px;
@@ -191,4 +188,65 @@ header .logo img {
 }
 .product_card__price {
   font-family: "din-condensed" !important;
+}
+
+.footer__main {
+  background-color: var(--background-colour);
+  opacity: 0.75;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "copyright blank payments";
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1em 1.9em;
+}
+.footer__main_site_map {
+  font-size: 2em;
+}
+.footer__main_site_map_list_item {
+  list-style-type: none;
+}
+.footer__main_site_map_list_item a {
+  color: #fff;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.footer__main_site_map_list_item a:hover {
+  color: var(--text-hover);
+}
+.footer__main_social_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__main_social_media_header {
+  font-size: 3.125em;
+}
+.footer__main_social_media_span {
+  font-size: 2.1875em;
+}
+.footer__main_social_media_logos img {
+  width: 2.1875em;
+  margin: 15px 2px;
+}
+.footer__secondary {
+  background-color: var(--background-colour);
+  display: grid;
+  align-items: center;
+  grid-template-areas: "copyright blank payments";
+  padding: 0.5em 0.3125em;
+}
+.footer__secondary_copyright {
+  font-family: "din-condensed" !important;
+  grid-area: copyright;
+  font-size: 1.75em;
+  margin-left: 0.625em;
+}
+.footer__secondary_payments {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: payments;
+}
+.footer__secondary_payments img {
+  width: 3.125em;
+  margin: 0 0.125em;
 }/*# sourceMappingURL=style.css.map */
