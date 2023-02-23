@@ -1,6 +1,6 @@
 var darkMode = localStorage.getItem('darkMode');
 var lightSwitch = document.querySelector('.nav_bar__toggle_colour img');
-var mainLogo = document.querySelector('.nav_bar__logo img');
+var mainLogo = document.querySelector('header>.logo img');
 
 if (darkMode == 'true') turnOffLights();
 
