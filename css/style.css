@@ -26,10 +26,14 @@
 body {
   color: #fff;
   font-family: "din-condensed-bold";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
   background: var(--background-colour);
+  opacity: 0.75;
   line-height: 1.4em;
   letter-spacing: 1px;
   font-size: 4.5em;
@@ -190,6 +194,68 @@ header .logo img {
   font-family: "din-condensed" !important;
 }
 
+.shop_page {
+  color: #000;
+  flex-grow: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.shop_page__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.shop_page__images_main {
+  margin: auto 1.875em;
+}
+.shop_page__images_gallery {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 2em;
+  height: 46.875em;
+}
+.shop_page__images_gallery img {
+  height: 20%;
+  margin-bottom: 1em;
+}
+.shop_page__information {
+  margin: 1.5625em 1.875em;
+}
+.shop_page__information_title {
+  font-size: 4.375em;
+  text-transform: uppercase;
+}
+.shop_page__information_price {
+  font-size: 2.8125em;
+  font-family: "din-condensed" !important;
+}
+.shop_page__information_desc {
+  font-size: 1.875em;
+  font-family: "din-condensed" !important;
+  margin: 1.5em 1em 0.6em;
+}
+.shop_page__information_desc a {
+  color: inherit;
+  transition: 0.3s ease;
+}
+.shop_page__information_desc a:hover {
+  color: var(--text-hover);
+}
+.shop_page__add_to_cart {
+  background-color: var(--background-colour);
+  color: #fff;
+  border-radius: 0.9375em;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em 1.5em;
+  margin: 0 3em;
+  cursor: pointer;
+  transition: opacity 400ms ease;
+}
+.shop_page__add_to_cart:hover {
+  opacity: 0.75;
+}
+
 .footer__main {
   background-color: var(--background-colour);
   opacity: 0.75;
@@ -223,6 +289,7 @@ header .logo img {
 }
 .footer__main_social_media_span {
   font-size: 2.1875em;
+  font-family: "din-condensed" !important;
 }
 .footer__main_social_media_logos img {
   width: 2.1875em;
