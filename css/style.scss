@@ -14,15 +14,18 @@
 }
 
 :root {
-	--background-colour: #fbbfec;
-	--text-hover: #8ad3ff;
-
-	--main-text-colour: #fbbfec;
+	--background-colour: #68c5fd;
+	--header-background-colour: #a4ddff;
+	
+	--main-text-colour: #68c5fd;
+	--text-hover: #fbbfec;
 }
 
 .dark {
 	--background-colour: #383838 !important;
-	--main-text-colour: #383838 !important;;
+	--header-background-colour: #6a6a6a !important;
+
+	--main-text-colour: #383838 !important;
 }
 
 body {
@@ -35,8 +38,7 @@ body {
 }
 
 header {
-	background: var(--background-colour);
-	opacity: 0.75;
+	background: var(--header-background-colour);
 
 	line-height: 1.4em;
 	letter-spacing: 1px;
@@ -158,7 +160,12 @@ header {
 		img {
 			height: 1.6em;
 		}
+	}&__toggle_colour:hover {
+		img {
+		color: var(--text-hover) !important;
+		}
 	}
+	
 	&__currency {
 		display: flex;
 		align-items: center;
@@ -180,8 +187,10 @@ header {
 
 .shop_layout {
 	display: grid;
+	gap: 50px;
+	margin: 50px;
 
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(5, 1fr);
 }
 
 .product_card {

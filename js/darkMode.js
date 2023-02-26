@@ -22,5 +22,6 @@ function turnOnLights() {
 	lightSwitch.src = 'images/design/SUN.svg';
 	mainLogo.src = 'images/design/light_logo.png';
 	smallLogo.src = 'images/design/light_logo.png';
+
 	document.querySelector('body').classList.remove('dark');
 }
