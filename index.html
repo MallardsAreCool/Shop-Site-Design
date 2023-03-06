@@ -1,155 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="images/favicon.png" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.14.0/css/solid.css"
-			integrity="sha384-TN9eFVoW87zV3Q7PfVXNZFuCwsmMwkuOTOUsyESfMS9uwDTf7yrxXH78rsXT3xf0"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="./css/style.css" />
-		<script src="./js/darkMode.js" defer></script>
-		<script src="./js/stickyNav.js" defer></script>
-		<title>DuckClothing - Home</title>
-	</head>
-	<body>
-		<header>
-			<div class="logo">
-				<a href="./index.html"><img src="./images/design/light_logo.png" /></a>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/solid.css"
+		integrity="sha384-TN9eFVoW87zV3Q7PfVXNZFuCwsmMwkuOTOUsyESfMS9uwDTf7yrxXH78rsXT3xf0" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/darkMode.js" defer></script>
+	<script src="./js/stickyNav.js" defer></script>
+	<title>DuckClothing - Home</title>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="./index.html"><img src="./images/design/light_logo.png" /></a>
+		</div>
+	</header>
+	<nav class="nav_bar">
+		<div class="nav_bar__logo">
+			<a href="./index.html"><img src="./images/design/light_logo.png" /></a>
+		</div>
+		<div class="nav_bar__navigation">
+			<ul class="nav_bar__list">
+				<li class="nav_bar__link"><a href="#EVERYTHING">SHOP EVERYTHING</a></li>
+				<li class="nav_bar__link">
+					<a href="#TOPS" class="nav_bar__drop_down">TOPS</a>
+					<ul class="nav_bar__drop_down_list">
+						<li class="nav_bar__drop_down_list_item"><a href="#BASIC SERIES">BASIC SERIES</a></li>
+						<li class="nav_bar__drop_down_list_item"><a href="#PLAIN">PLAIN</a></li>
+						<li class="nav_bar__drop_down_list_item"><a href="#GRAPHIC TEES">GRAPHIC TEES</a></li>
+					</ul>
+				</li>
+				<li class="nav_bar__link">
+					<a href="#BOTTOMS" class="nav_bar__drop_down">BOTTOMS</a>
+					<ul class="nav_bar__drop_down_list">
+						<li class="nav_bar__drop_down_list_item"><a href="#JEANS">JEANS</a></li>
+						<li class="nav_bar__drop_down_list_item"><a href="#SHORTS">SHORTS</a></li>
+						<li class="nav_bar__drop_down_list_item"><a href="#SWIMWEAR">SWIM WEAR</a></li>
+					</ul>
+				</li>
+				<li class="nav_bar__link">
+					<a href="#ACCESSORIES" class="nav_bar__drop_down">ACCESSORIES</a>
+					<ul class="nav_bar__drop_down_list">
+						<li class="nav_bar__drop_down_list_item"><a href="#HATS">HATS</a></li>
+						<li class="nav_bar__drop_down_list_item"><a href="#GLASSES">GLASSES</a></li>
+						<li class="nav_bar__drop_down_list_item"><a href="#NECKLACES">NECKLACES</a></li>
+					</ul>
+				</li>
+				<li class="nav_bar__link"><a href="#PRINTS">PRINTS</a></li>
+			</ul>
+		</div>
+		<div class="nav_bar__shop">
+			<div class="nav_bar__toggle_colour"><img src="./images/design/SUN.svg" onclick="turnOffLights()" /></div>
+			<div class="nav_bar__currency"><a href="#?">GBP</a></div>
+			<div class="nav_bar__shopping_cart"><img src="./images/design/shopping_cart.png" /><span
+					class="nav_bar__shopping_cart_count">1</span></div>
+		</div>
+	</nav>
+
+	<section class="shop_layout">
+		<a class="product_card" href="./shop-example.html" title="Babyblue Tee">
+			<img class="product_card__image" src="./images/products/shirts/blue-front.jpg" />
+			<img class="product_card__image" src="./images/products/shirts/blue-back.jpg" />
+			<div class="product_card__tag">
+				<div class="product_card__name">babyblue tee</div>
+				<div class="product_card__price">£19.99</div>
 			</div>
-		</header>
-		<nav class="nav_bar">
-			<div class="nav_bar__logo">
-				<a href="./index.html"><img src="./images/design/light_logo.png" /></a>
+		</a>
+
+		<a class="product_card" href="./shop-example.html" title="Natural Jeans">
+			<img class="product_card__image" src="./images/products/jeans/natural-front.jpg" />
+			<img class="product_card__image" src="./images/products/jeans/natural-back.jpg" />
+			<div class="product_card__tag">
+				<div class="product_card__name">natural jeans</div>
+				<div class="product_card__price">£20.00</div>
 			</div>
-			<div class="nav_bar__navigation">
-				<ul class="nav_bar__list">
-					<li class="nav_bar__link"><a href="#EVERYTHING">SHOP EVERYTHING</a></li>
-					<li class="nav_bar__link">
-						<a href="#TOPS" class="nav_bar__drop_down">TOPS</a>
-						<ul class="nav_bar__drop_down_list">
-							<li class="nav_bar__drop_down_list_item"><a href="#BASIC SERIES">BASIC SERIES</a></li>
-							<li class="nav_bar__drop_down_list_item"><a href="#PLAIN">PLAIN</a></li>
-							<li class="nav_bar__drop_down_list_item"><a href="#GRAPHIC TEES">GRAPHIC TEES</a></li>
-						</ul>
-					</li>
-					<li class="nav_bar__link">
-						<a href="#BOTTOMS" class="nav_bar__drop_down">BOTTOMS</a>
-						<ul class="nav_bar__drop_down_list">
-							<li class="nav_bar__drop_down_list_item"><a href="#JEANS">JEANS</a></li>
-							<li class="nav_bar__drop_down_list_item"><a href="#SHORTS">SHORTS</a></li>
-							<li class="nav_bar__drop_down_list_item"><a href="#SWIMWEAR">SWIM WEAR</a></li>
-						</ul>
-					</li>
-					<li class="nav_bar__link">
-						<a href="#ACCESSORIES" class="nav_bar__drop_down">ACCESSORIES</a>
-						<ul class="nav_bar__drop_down_list">
-							<li class="nav_bar__drop_down_list_item"><a href="#HATS">HATS</a></li>
-							<li class="nav_bar__drop_down_list_item"><a href="#GLASSES">GLASSES</a></li>
-							<li class="nav_bar__drop_down_list_item"><a href="#NECKLACES">NECKLACES</a></li>
-						</ul>
-					</li>
-					<li class="nav_bar__link"><a href="#PRINTS">PRINTS</a></li>
-				</ul>
+		</a>
+
+		<a class="product_card" href="./shop-example.html" title="The Sports Longsleeve">
+			<img class="product_card__image" src="./images/products/shirts/tan-front.jpg" />
+			<img class="product_card__image" src="./images/products/shirts/tan-back.jpg" />
+			<div class="product_card__tag">
+				<div class="product_card__name">tan oversized tee</div>
+				<div class="product_card__price">£24.99</div>
 			</div>
-			<div class="nav_bar__shop">
-				<div class="nav_bar__toggle_colour"><img src="./images/design/SUN.svg" onclick="turnOffLights()" /></div>
-				<div class="nav_bar__currency"><a href="#?">GBP</a></div>
-				<div class="nav_bar__shopping_cart"><img src="./images/design/shopping_cart.png" /><span class="nav_bar__shopping_cart_count">1</span></div>
+		</a>
+
+		<a class="product_card" href="./shop-example.html" title="Basic Striped Shirt">
+			<img class="product_card__image" src="./images/products/shirts/blue+white-front.jpg" />
+			<img class="product_card__image" src="./images/products/shirts/blue+white-back.jpg" />
+			<div class="product_card__tag">
+				<div class="product_card__name">basic striped shirt</div>
+				<div class="product_card__price">£19.99</div>
 			</div>
-		</nav>
+		</a>
 
-		<section class="shop_layout">
-			<a class="product_card" href="./shop-example.html" title="Babyblue Tee">
-				<img class="product_card__image" src="./images/products/shirts/blue-front.jpg" />
-				<img class="product_card__image" src="./images/products/shirts/blue-back.jpg" />
-				<div class="product_card__tag">
-					<div class="product_card__name">babyblue tee</div>
-					<div class="product_card__price">£19.99</div>
-				</div>
-			</a>
+		<a class="product_card" href="./shop-example.html" title="Tan Shorts">
+			<img class="product_card__image" src="./images/products/shorts/tan-front.jpg" />
+			<img class="product_card__image" src="./images/products/shorts/tan-back.jpg" />
+			<div class="product_card__tag">
+				<div class="product_card__name">tan shorts</div>
+				<div class="product_card__price">£15.00</div>
+			</div>
+		</a>
 
-			<a class="product_card" href="./shop-example.html" title="Natural Jeans">
-				<img class="product_card__image" src="./images/products/jeans/natural-front.jpg" />
-				<img class="product_card__image" src="./images/products/jeans/natural-back.jpg" />
-				<div class="product_card__tag">
-					<div class="product_card__name">natural jeans</div>
-					<div class="product_card__price">£20.00</div>
-				</div>
-			</a>
+		<a class="product_card" href="./shop-example.html" title="Plain White Tee">
+			<img class="product_card__image" src="./images/products/shirts/white-front.jpg" />
+			<img class="product_card__image" src="./images/products/shirts/white-back.jpg" />
+			<div class="product_card__tag">
+				<div class="product_card__name">plain white tee</div>
+				<div class="product_card__price">£19.99</div>
+			</div>
+		</a>
+	</section>
 
-			<a class="product_card" href="./shop-example.html" title="The Sports Longsleeve">
-				<img class="product_card__image" src="./images/products/shirts/tan-front.jpg" />
-				<img class="product_card__image" src="./images/products/shirts/tan-back.jpg" />
-				<div class="product_card__tag">
-					<div class="product_card__name">tan oversized tee</div>
-					<div class="product_card__price">£24.99</div>
-				</div>
-			</a>
+	<footer class="footer">
+		<div class="footer__main">
+			<ul class="footer__main_site_map">
+				<li class="footer__main_site_map_list_item"><a href="#HOME">HOME</a></li>
+				<li class="footer__main_site_map_list_item"><a href="#MAINSTORE">MAIN STORE</a></li>
+				<li class="footer__main_site_map_list_item"><a href="#ACCOUNT">ACCOUNT</a></li>
+				<li class="footer__main_site_map_list_item"><a href="#CONTACTUS">CONTACT US</a></li>
+				<li class="footer__main_site_map_list_item"><a href="#TERMSANDCONDITIONS">TERMS AND CONDITIONS</a></li>
+			</ul>
 
-			<a class="product_card" href="./shop-example.html" title="Basic Striped Shirt">
-				<img class="product_card__image" src="./images/products/shirts/blue+white-front.jpg" />
-				<img class="product_card__image" src="./images/products/shirts/blue+white-back.jpg" />
-				<div class="product_card__tag">
-					<div class="product_card__name">basic striped shirt</div>
-					<div class="product_card__price">£19.99</div>
-				</div>
-			</a>
-
-			<a class="product_card" href="./shop-example.html" title="Tan Shorts">
-				<img class="product_card__image" src="./images/products/shorts/tan-front.jpg" />
-				<img class="product_card__image" src="./images/products/shorts/tan-back.jpg" />
-				<div class="product_card__tag">
-					<div class="product_card__name">tan shorts</div>
-					<div class="product_card__price">£15.00</div>
-				</div>
-			</a>
-
-			<a class="product_card" href="./shop-example.html" title="Plain White Tee">
-				<img class="product_card__image" src="./images/products/shirts/white-front.jpg" />
-				<img class="product_card__image" src="./images/products/shirts/white-back.jpg" />
-				<div class="product_card__tag">
-					<div class="product_card__name">plain white tee</div>
-					<div class="product_card__price">£19.99</div>
-				</div>
-			</a>
-		</section>
-
-		<footer class="footer">
-			<div class="footer__main">
-				<ul class="footer__main_site_map">
-					<li class="footer__main_site_map_list_item"><a href="#HOME">HOME</a></li>
-					<li class="footer__main_site_map_list_item"><a href="#MAINSTORE">MAIN STORE</a></li>
-					<li class="footer__main_site_map_list_item"><a href="#ACCOUNT">ACCOUNT</a></li>
-					<li class="footer__main_site_map_list_item"><a href="#CONTACTUS">CONTACT US</a></li>
-					<li class="footer__main_site_map_list_item"><a href="#TERMSANDCONDITIONS">TERMS AND CONDITIONS</a></li>
-				</ul>
-
-				<div class="footer__main_social_media">
-					<span class="footer__main_social_media_header">DONT MISS OUT ON UPDATES!</span>
-					<span class="footer__main_social_media_span">FOLLOW US EVERYWHERE</span>
-					<div class="footer__main_social_media_logos">
-						<a href="#instagram"><img src="./images/design/social/instagram.png" /></a>
-						<a href="#youtube"><img src="./images/design/social/youtube.png" /></a>
-						<a href="#tiktok"><img src="./images/design/social/tiktok.png" /></a>
-						<a href="#twitter"><img src="./images/design/social/twitter.png" /></a>
-					</div>
+			<div class="footer__main_social_media">
+				<span class="footer__main_social_media_header">DONT MISS OUT ON UPDATES!</span>
+				<span class="footer__main_social_media_span">FOLLOW US EVERYWHERE</span>
+				<div class="footer__main_social_media_logos">
+					<a href="#instagram"><img src="./images/design/social/instagram.png" /></a>
+					<a href="#youtube"><img src="./images/design/social/youtube.png" /></a>
+					<a href="#tiktok"><img src="./images/design/social/tiktok.png" /></a>
+					<a href="#twitter"><img src="./images/design/social/twitter.png" /></a>
 				</div>
 			</div>
-			<div class="footer__secondary">
-				<div class="footer__secondary_copyright">COPYRIGHT © DUCK CLOTHING 2023</div>
-				<div class="footer__secondary_payments">
-					<img src="./images/design/cards/applepay.png" />
-					<img src="./images/design/cards/card.png" />
-					<img src="./images/design/cards/googlepay.png" />
-					<img src="./images/design/cards/mastercard.png" />
-					<img src="./images/design/cards/paypal.png" />
-					<img src="./images/design/cards/visa.png" />
-				</div>
+		</div>
+		<div class="footer__secondary">
+			<div class="footer__secondary_copyright">COPYRIGHT © DUCK CLOTHING 2023</div>
+			<div class="footer__secondary_payments">
+				<img src="./images/design/cards/applepay.png" />
+				<img src="./images/design/cards/card.png" />
+				<img src="./images/design/cards/googlepay.png" />
+				<img src="./images/design/cards/mastercard.png" />
+				<img src="./images/design/cards/paypal.png" />
+				<img src="./images/design/cards/visa.png" />
 			</div>
-		</footer>
-	</body>
+		</div>
+	</footer>
+</body>
+
 </html>
